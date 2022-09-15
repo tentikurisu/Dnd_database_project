@@ -2,11 +2,10 @@ package com.example.services;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
 
-import com.example.demo.entities.weapon;
-import com.example.demo.entities.weapon;
-import com.example.demo.repo.WeaponRepo;
+import org.springframework.stereotype.Service;
+import com.example.entities.Item;
+import com.example.repo.ItemRepo;
 
 @Service
 public class Itemservice {
@@ -19,19 +18,19 @@ public class Itemservice {
 
 	
 	
-	public weapon create(weapon input) {
+	public Item create(Item input) {
 		return repo.saveAndFlush(input);
 	}
 
-	public List<weapon> getAll(){
+	public List<Item> getAll(){
 		return repo.findAll();
 	}
-	public weapon getById(long id) {
+	public Item getById(long id) {
 		return repo.findById(id).get();
 	}
 	
-	public weapon update(long id,weapon input) {
-		weapon existing = repo.findById(id).get();
+	public Item update(long id,Item input) {
+		Item existing = repo.findById(id).get();
 		
 		existing.setName(input.getName());
 		existing.setCost(input.getCost());
@@ -42,7 +41,7 @@ public class Itemservice {
 	}
 
 
-	public boolean deleteweapon(long id) {
+	public boolean deleteItem(long id) {
 		repo.deleteById(id);
 		return repo.existsById(id);
 		
