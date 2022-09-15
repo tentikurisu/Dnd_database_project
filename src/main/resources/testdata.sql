@@ -1,0 +1,1 @@
+INSERT INTO `Item`(`cost`,`damagetype`,`dice`,`name`,`propeties`) VALUES(10,'slashing',6,'rust_sword','none');

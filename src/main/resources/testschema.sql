@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `Item`;
+
+CREATE TABLE `weapon`(
+	`id` BIGINT AUTO_INCREMENT,
+	`cost` INT NOT NULL,
+	`damagetype` VARCHAR(255) NOT NULL,
+	`dice` INT NOT NULL,
+	`name` VARCHAR(255) NOT NULL,
+	`propeties` VARCHAR(255) NOT NULL,
+	PRIMARY KEY(`id`)
+);
