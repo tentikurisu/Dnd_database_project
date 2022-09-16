@@ -1,0 +1,5 @@
+com\example\demo\controllers\weaponControllerUnitTest.class
+com\example\demo\Starterproject1ApplicationTests.class
+com\example\demo\controllers\weaponcontrollerintergrationtest.class
+com\example\demo\entities\weaponTest.class
+com\example\demo\services\weaponServiceUnitTest.class
