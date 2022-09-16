@@ -10,6 +10,8 @@ api to record dnd items for qa project
 
 - [@tentikurisu](https://github.com/tentikurisu)
 
+-jira board for the project https://charlieauletta.atlassian.net/jira/software/projects/DWD/boards/1/backlog
+
 
 ## Installation
 
@@ -28,6 +30,7 @@ requirements for Installation
 the api allows users to create and record dnd weapons for their campaigns servers are run on the users pc using my sql and controlled with either the frontend application or postman
 
 to test on postman simply use the commands below 
+swagger https://i.gyazo.com/7db4cc339f20bc14a142c69aea5e2669.png
 
 post localhost:8080/create
 https://i.gyazo.com/72693d7e84124eb9b4f80ea24f325c9d.png
