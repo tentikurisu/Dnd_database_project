@@ -18,7 +18,7 @@ import com.example.services.Itemservice;
 
 @RestController
 public class itemcontroller{
-	public Itemservice service;
+	private Itemservice service;
 	public itemcontroller(Itemservice service) {
 		super();
 		this.service= service;
